@@ -1,0 +1,7 @@
+REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
+yourname/ubuntu-tmp-file   latest              8b1442bf204c        10 minutes ago      63.2MB
+ubuntu                     18.04               56def654ec22        8 weeks ago         63.2MB
+hello-world                latest              bf756fb1ae65        10 months ago       13.3kB
+
+1) Контейнер описывает инфраструктурные элементы сеть, volume и т.д.
+2) Образ описывает статическую информацию о слоях и описание
