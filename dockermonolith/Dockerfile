@@ -10,6 +10,6 @@ COPY db_config /reddit/db_config
 COPY start.sh /start.sh
 
 RUN cd /reddit && rm Gemfile.lock && bundle install
-RUN chmod ugo+rwx /start.sh
+RUN chmod 0777 /start.sh
 
 CMD ["/start.sh"]
