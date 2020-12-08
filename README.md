@@ -29,3 +29,11 @@ palmin-albert333 microservices repository
    docker run -d --network=reddit --network-alias=post --env POST_DATABASE_HOST=new_post_db albertpalmin1988/post:1.0
    docker run -d --network=reddit --network-alias=comment --env COMMENT_DATABASE_HOST=new_comment_db albertpalmin1988/comment:1.0
    docker run -d --network=reddit -p 9292:9292 albertpalmin1988/ui:1.0
+
+## Homework#14
+
+1. Были изучены сети docker: none, host, bridge.
+
+2. Былз создан и описан docker-compose.
+
+3. Был создан env файл.
