@@ -37,3 +37,5 @@ palmin-albert333 microservices repository
 2. Былз создан и описан docker-compose.
 
 3. Был создан env файл.
+
+4. Выполнено задание со *
