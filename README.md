@@ -37,3 +37,15 @@ palmin-albert333 microservices repository
 2. Былз создан и описан docker-compose.
 
 3. Был создан env файл.
+
+4. Выполнено задание со *
+
+## Homework#15
+1. Была создана ВМ на Yandex.Cloud с необходимыми параметрами.
+
+2. Был создан docker-compose
+
+3. Были созданы каталоги /srv/gitlab/config, /srv/gitlab/data, /srv/gitlab/logs>
+   прописаны в docker-compose.
+
+4. Был настроен Gitlab CI и создан pipeline
