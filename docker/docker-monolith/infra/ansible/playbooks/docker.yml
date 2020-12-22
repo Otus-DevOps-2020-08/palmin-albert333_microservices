@@ -1,0 +1,10 @@
+---
+- name: docker install
+  hosts: docker
+  become: true
+
+  pre_tasks:
+    - ping:
+
+  roles:
+    - docker
