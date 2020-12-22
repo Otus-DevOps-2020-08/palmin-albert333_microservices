@@ -1,22 +1,43 @@
-variable "service_account_key_file" {
-  description = "key"
+variable cloud_id {
+  description = "Cloud"
 }
-variable "cloud_id" {
-  description = "cloud id"
+variable folder_id {
+  description = "Folder"
 }
-variable "folder_id" {
-  description = "folder"
+variable zone {
+  description = "Zone"
+  # Значение по умолчанию
+  default = "ru-central1-a"
 }
-variable "zone" {
-  description = "zone"
-  default     = "ru-central1-a"
+variable public_key_path {
+  # Описание переменной
+  description = "Path to the public key used for ssh access"
 }
-variable "subnet_id" {
-  description = "subnet"
+variable image_id {
+  description = "Disk image"
 }
-variable "public_key_path" {
-  description = "id_rsa pub"
+variable subnet_id {
+  description = "Subnet"
 }
-variable "private_key_path" {
-  description = "id_rsa private"
+variable service_account_key_file {
+  description = "key.json"
+}
+variable private_key_path {
+  description = "Path to the private key used for ssh access"
+}
+variable reddit_listener_port {
+  description = "reddit listener port"
+  default     = 9292
+}
+variable instances_count {
+  description = "Quantity of instances"
+  default     = 1
+}
+variable app_disk_image {
+  description = "Disk image for reddit app"
+  default     = "reddit-app-base"
+}
+variable db_disk_image {
+  description = "Disk image for reddit db"
+  default     = "reddit-db-base"
 }

@@ -1,15 +1,17 @@
-variable instance_count {
-  description = "count of instance"
-  type        = number
-  default     = 1
+variable public_key_path {
+  description = "Path to the public key used for ssh access"
 }
 variable app_disk_image {
   description = "Disk image for reddit app"
-  default = "fd8odlihkbqfh78g1qgt"
+  default = "reddit-app-base"
 }
-variable "subnet_id" {
-  description = "subnet"
+variable subnet_id {
+description = "Subnets for modules"
 }
-variable "public_key_path" {
-  description = "id_rsa pub"
+variable db_url {
+  description = "Database url"
+  default     = "127.0.0.1:21017"
+}
+variable private_key_path {
+  description = "Path to the private key used for ssh access"
 }

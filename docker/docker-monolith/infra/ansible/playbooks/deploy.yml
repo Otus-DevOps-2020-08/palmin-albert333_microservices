@@ -1,17 +1,26 @@
 ---
-- name: docker install
-  hosts: docker
+- name: Deploy App
+  hosts: app
   become: true
-
-  roles:
-    - docker
+  tags: deploy
 
   tasks:
-    - name: Install & start Reddit
+    - debug:
+        var: image_to_run
+
+    - name: Pull docker image
+      docker_image:
+        name: "{{ image_to_run }}"
+        source: pull
+        state: present
+      when: image_to_run is defined
+
+    - name: Create docker container
       docker_container:
-        name: reddit
-        image: 870414/otus-reddit:1.0
+        name: "{{ container_name | default('reddit') }}"
+        image: "{{ image_to_run }}"
+        detach: yes
+        published_ports:
+          - 9292:9292
         state: started
-        restart: yes
-        ports:
-          - "80:9292"
+      when: image_to_run is defined
