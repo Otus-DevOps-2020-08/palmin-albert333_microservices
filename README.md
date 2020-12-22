@@ -49,3 +49,9 @@ palmin-albert333 microservices repository
    прописаны в docker-compose.
 
 4. Был настроен Gitlab CI и создан pipeline
+
+## Homework#16
+
+1. Запуск Prometheus
+
+2. Настроен мониторинг микросервисов
