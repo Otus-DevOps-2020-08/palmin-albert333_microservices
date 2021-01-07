@@ -55,3 +55,9 @@ palmin-albert333 microservices repository
 1. Запуск Prometheus
 
 2. Настроен мониторинг микросервисов
+
+# Homework#18
+
+Создал конфиги сервисов reddit для kubernetes
+
+Прошел kubernetes-the-hard-way
