@@ -62,9 +62,15 @@ palmin-albert333 microservices repository
 
 Прошел kubernetes-the-hard-way
 
-#Homework 19
+##Homework 19
 1. Запущен локальный minikube с драйвером VirtualBox
 2. Написаны манифесты для деплоя компонентов приложения в кубер
 3. Приложение проверено и работает в minikube
 4. Развернут кластер кубернетис в Яндекс.Клауд вручную.
 5. Развернут кластер кубернетис в Яндекс.Клауд с помощью terraform (для задания со *)
+##Homework 20
+1. Настроен loadbalancer.
+2. Настроен Ingress.
+3. Настроен Secret TLS (написан манифест для задания со звездочкой).
+4. Настроен NetworkPolicy.
+5. Настроен PersistentVolume, PersistentClaim
